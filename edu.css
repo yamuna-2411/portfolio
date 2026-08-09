@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.mainsection{
+    min-height: 100vh;
+    display: flex;
+align-items: center;
+justify-content: center;
+background:radial-gradient(rgb(250, 111, 134),white);
+padding: 100px 15px;
+}
+.timeline{
+    position: relative;
+    max-width: 100%;
+
+}
+.timeline::after{
+    content:" ";
+    position: absolute;
+    width: 5px;
+    height: 1000px;
+    border-radius: 7px;
+    left: 488px;
+    top:40px;
+    background:linear-gradient(rgb(121, 201, 233),rgb(236, 144, 159));
+
+
+}
+.timeline .box{
+    margin: 40px;
+    color: rgb(238, 226, 226);
+    position: relative;
+
+
+}
+.box:nth-child(odd){
+    padding-left: 500px;
+    text-align: left;
+
+}
+.box:nth-child(even){
+    padding-right: 500px;
+    text-align: right;
+
+}
+.box:last-child{
+    margin-bottom: 0px;
+}
+.point{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #1f0241;
+    position: absolute;
+    left: 442px;
+    bottom:150px;
+    z-index:1;
+}
+.year{
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: rgb(100, 10, 173);
+    margin-bottom: 10px;
+
+}
+.content{
+    padding: 20px;
+    background-color: rgb(218, 106, 125);
+    width: 400px;
+    border-radius: 2px;
+    cursor: pointer;
+     box-shadow: 2px 2px 20px  rgb(168,78,93);
+}
+.content h3{
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    color: black;
+
+}
+.content p{
+    font-size: 14px;
+}
+@media screen and (max-width: 980px) {
+    .timeline::after{
+        left:20px;
+        }
+    .points{
+        left: -26px;
+
+    }
+    .box:nth-child(odd){
+        padding-left: 0px;
+
+
+    }
+    .box:nth-child(even){
+        padding-right: 0px;
+        text-align: left;
+
+    }
+
+    
+}@media screen and (max-width: 460px) {
+    .timeline::after{
+        height:1200px;
+        }
+    .points{
+        bottom: 140px;
+
+    }
+    .content{
+        width: 250px;
+    }
+
+    
+}
+h1{
+    text-align: center;
+    color: transparent;
+    background:radial-gradient(blue,rgb(211, 93, 113),purple);
+    -webkit-background-clip: text;
+}

@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+}
+h2{
+    background:linear-gradient( to right,pink, #dd2179,rgb(235, 185, 193),#DD2179,pink);
+}.set{
+    width: 100%;
+    height: 100%;
+    background: rgb(11, 15, 11);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.skills h3{
+    font-weight: 400;
+    letter-spacing: 3px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    color: #fff;
+    font-size: 16px;
+
+
+}
+.bar{
+    background: #959595;
+    width: 600px;
+    height:10px;
+    border-radius: 5px;
+
+}
+.bar div{
+    height: 10px;
+    border-radius: 5px;
+    width: 0%;  
+}
+.bar div span{
+    height: 30px;
+    width: 50px;
+    border-radius: 50%;
+    background: whitesmoke;
+    float: right;
+    margin-top: -15px;
+    margin-right: -20px;
+    color: #333;
+    
+
+}
+.python{
+    background: rgb(55, 8, 226);
+        animation: python 1s linear forwards;
+}
+.html{
+    background: rgb(8, 211, 226);
+        animation: html 1s linear forwards;
+
+}.css{
+    background: pink;
+        animation: css 1s linear forwards;
+
+}.reactjs{
+    background:rgb(31, 155, 62) ;
+        animation: reactjs 1s linear forwards;
+
+}.nodejs{
+    background: teal;
+        animation: nodejs 1s linear forwards;
+
+}.mysql{
+    background: rgb(241, 115, 136);
+        animation: mysql 1s linear forwards;
+
+}.firebase{
+    background: rgb(94, 255, 0);
+        animation: firebase 1s linear forwards;
+
+}.mongodb{
+    background: rgb(141, 1, 87);
+        animation: mongodb 1s linear forwards;
+
+}
+.django{
+    background: rgb(255, 0, 140);
+        animation: django 1s linear forwards;
+
+}
+.bootstrap{
+    background: rgb(25, 158, 129);
+        animation: bootstrap 1s linear forwards;
+
+}
+.git{
+    background: rgb(36, 5, 119);
+        animation: git 1s linear forwards;
+
+}
+.python span{
+    border: 2px solid   rgb(55, 8, 226);
+
+}
+.html span{
+    border: 1px solid rgb(8, 211, 226) ;
+
+}.css span{
+    border: 1px solid pink ;
+
+}.reactjs span{
+    border: 1px solid rgb(31, 155, 62);
+
+}.nodejs span{
+    border: 1px solid teal;
+
+}.mysql span{
+    border: 1px solid  rgb(241, 115, 136);
+
+}.firebase span{
+    border: 1px solid rgb(94, 255, 0);
+
+}.mongodb span{
+    border: 1px solid rgb(141, 1, 87);
+
+}.django span{
+    border: 1px solid rgb(255, 0, 140);
+
+}
+.bootstrap span{
+    border: 1px solid  rgb(25, 158, 129);
+
+}
+.git span{
+    border: 1px solid rgb(36, 5, 119);
+
+}
+@keyframes python{
+    100%{
+        width: 90%;
+    }
+}
+@keyframes html{
+    100%{
+        width: 100%;
+    }
+}
+@keyframes css{
+    100%{
+        width: 100%;
+    }
+}
+@keyframes reactjs{
+    100%{
+        width: 92%;
+    }
+}
+@keyframes nodejs{
+    100%{
+        width: 95%;
+    }
+}
+@keyframes mysql{
+    100%{
+        width: 90%;
+    }
+}
+@keyframes firebase{
+    100%{
+        width: 93%;
+    }
+}
+@keyframes mongodb{
+    100%{
+        width: 80%;
+    }
+}
+@keyframes django{
+    100%{
+        width: 90%;
+    }
+}
+@keyframes bootstrap{
+    100%{
+        width: 95%;
+    }
+}
+@keyframes git{
+    100%{
+        width: 80%;
+    }
+}

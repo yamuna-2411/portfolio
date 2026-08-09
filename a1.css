@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    overflow: hidden;
+
+}
+ul li .active{
+    color: #5ca8db;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    color:white;
+    animation: header 2s ease-in-out;
+
+}
+@keyframes header{
+    0%{
+        transform: translateY(-100%);
+    }
+}
+nav li{
+    display: inline-block;
+    margin: 10px 20px;
+    font-weight: 600;
+
+}
+.main{
+    width:100%;
+    display:  flex;
+}
+
+.content{
+    width: 50%;
+    margin-top: 5%;
+    margin-left: 5%;
+    color: white;
+    overflow: hidden;
+    animation: content 2s ease-in-out;
+
+}
+@keyframes content{
+    0%{
+        opacity: 0;
+        transform: translateX(-50%);
+
+
+    }
+}
+button:hover{
+    background: radial-gradient(circle,rgb(180, 27, 173),purple,rgb(253, 92, 119));
+}
+.content h1{
+   font-size: 60px;
+   margin-bottom: 1%;
+   letter-spacing: 7px;
+   color:transparent;
+   background: linear-gradient(to right,rgb(247, 147, 163),rgb(150, 41, 240),rgb(47, 223, 71));
+    -webkit-background-clip: text;
+   font-family: sans-serif;
+
+}
+.content h3{
+    font-size: 25px;
+    margin-bottom: 3%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+span{
+    color:aqua;
+}
+
+.content p{
+    font-size: 20px;
+    margin-bottom: 3%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+}
+button{
+    padding: 15px 30px;
+    background:rgb(156, 52, 116);
+    color:white;
+    font-size: 17px;
+    border-radius: 10px;
+
+}
+.image{
+    width: 50%;
+    margin-top: 8%;
+    z-index: -1;    
+}
+img{
+    width: 40rem;
+    animation: car 5s ease-in-out;
+
+}
+@keyframes car{
+    0%{
+        transform: translateX(100%);
+    }
+    
+}
+@media screen and (max-width:1200px) {
+    .content{
+        width: 100%;
+        text-align: center;
+
+    }
+    .image{
+        width: 100%;
+        position: absolute;
+        bottom: -5%;
+        display: flex;
+        justify-content: center;
+
+
+    }
+    img{
+        width: 20rem;
+    }
+    
+}a{
+    text-decoration: none;
+    color: pink;
+}a:hover{
+    color: aqua;
+    cursor: pointer;
+}
